@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1-Project</title>
+    <style>
+        body{
+            background-color: rgb(199, 171, 226);
+        }
+        ol li{
+            font-size: 35px;
+            text-align: center;
+        }
+        ol{
+            list-style: none;
+        }
+        ul{
+            list-style: none;
+        }
+        ul li{
+            margin-right: 30px;
+            float: left;
+            font-size: 30px;
+        }
+        footer{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            font-size: 25px;
+            width: auto;
+            height: auto;
+            background-color: blueviolet;
+            margin-left: -50px;
+            margin-right: -50px;
+            margin-bottom: -20px;
+        }
+        div{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding-left: 15px;
+            color: rgb(76, 17, 124);
+        }
+        .basis img{
+            width: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1{
+            font-size: 60px;
+            color: rgb(72, 11, 94);
+            margin-bottom: -20px;
+        }
+        h2{
+            font-size: 50px;
+            text-align: center;
+            color: rgb(46, 7, 69);
+            margin-bottom: -20px;
+        }
+        p{
+            font-size: 30px;
+            text-align: center;
+        }
+        .header{
+        width: auto;
+        height: 200px;
+        background:#8b1ede;
+        border-radius: 8px;
+        position: sticky;
+        justify-content: space-between;
+        top: 0;
+        display: flex;
+        padding: 12px 50px;
+        box-sizing: border-box;
+        margin-left: -50px;
+        margin-top: -20px;
+        margin-right: -50px;
+        margin-bottom: 80px;
+        }
+        .logo img{
+            max-width: 200px;
+            max-height: auto;
+            display: flex;
+            align-items: center;
+            object-fit: contain;
+        }
+        .hero-text{
+            text-align: center;
+        }
+        .flexbox{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        .profile img{
+            width: 40%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .profile{
+            width: auto;
+            height: auto;
+            background: #d08af0;
+            border-radius: 8px;
+            margin-left: 50px;
+            margin-right: 50px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-bottom: 80px;
+        }
+        .about{
+            width: auto;
+            height: auto;
+            background: #ad75cb;
+            border-radius: 8px;
+            margin-left: 35px;
+            margin-right: 50px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+            margin-bottom: 80px;
+        }
+        .about-text{
+            text-align: center;
+            margin-right: 50px;
+        }
+        .works{
+            margin-left: 50px;
+            margin-right: 50px;
+            width: auto;
+            height: auto;
+            background: #5b0e9b;
+            border-radius: 8px;
+            margin-left: 37px;
+            margin-right: 50px;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            margin-bottom: 50px;
+        }
+        li a{
+            display: block;
+            text-decoration: none;
+            color: rgb(49, 9, 98);
+            font-size: 30px;
+            transition: 0.2s ease;
+        }
+        li a:hover{
+            color: rgb(31, 5, 62);
+            font-size: 29px;
+        }
+        a{
+            color: rgb(158, 41, 171);
+            font-style: italic;
+        }
+        .basis2{
+            width: auto;
+            height: auto;
+            background: #9066b5;
+            border-radius: 8px;
+            margin-left: 280px;
+            margin-right: 280px;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            margin-bottom: 100px;
+        }
+        dt{
+            font-size: 30px;
+        }
+        fk{
+            font-size: 25px;
+        }
+        .basis3{
+            width: auto;
+            height: auto;
+            background: #9e62e8;
+            border-radius: 8px;
+            margin-left: 300px;
+            margin-right: 300px;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            margin-bottom: 100px;
+        }
+        .basis3 dl{
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+        .main{
+            margin-bottom: 100px;
+        }
+        .form{
+            align-content: center;
+            text-align: center;
+            width: 900px;
+            height: auto;
+            background: #bf9ce7;
+            border-radius: 8px;
+            margin-left: 55px;
+            margin-right: 55px;
+            padding-top: 50px;
+            padding-bottom: 70px;
+            margin-bottom: 100px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .type input{
+            width: 300px;
+            height: auto;
+        }
+        h5{
+            margin-top: 50px;
+            margin-bottom: 5px;
+            font-size: 30px;
+        }
+        .find{
+            align-content: center;
+        }
+        label{
+            font-size: 20px;
+        }
+        .rating select{
+            width: 200px;
+            height: 30px;
+        }
+        .feedback textarea{
+            width: 400px;
+            height: 100px;
+        }
+        .feedback{
+            margin-bottom: 50px;
+        }
+        .submit-but{
+            width: 200px;
+            height: auto;
+            background-color: #6a2ba1;
+            color: rgb(225, 198, 240);
+            border: none;
+            padding: 8px;
+            border-radius: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 40px;
+            margin-top: 50px;
+            cursor: pointer;
+            transition: background-color 0.5s ease;
+        }
+
+        .submit-but:hover{
+            background: #893dcb;
+            color: #501980;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="header">
+        <div class="logo">
+            <img src="Logo.png" alt="Logo" width="80%">
+        </div>
+
+        <div class="flexbox">
+            <ul>
+                <li><a href="#home">Myself and i</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- HEADERCLIFF -->
+
+
+
+
+
+    <!-- MY HERO -->
+    <div class="profile">
+        <img src="LOLZ.jpg" alt="Profile Picture">
+        <div class="hero-text">
+            <h1>Hello, I am Jaan Patryk M. Dela Cruz</h1>
+            <p>Aspiring person/writer</p>
+        </div>
+    </div>
+    <!-- HERO DEAD-->
+
+
+
+
+
+
+    <!-- ABOUT ME -->
+    <div class="main">
+        <div class="about">
+            <div class="about-text">
+                <h2>ABOUT ME</h2>
+                <p>Salutations I am Jaan Patryk M. Dela Cruz, a grade 9 student from OB Montessori Greenhills i love doing stuff such as:</p>
+
+                <br>
+                <br>
+
+                <div class="basis3">
+                    <dl>
+                        <dt><strong>Writing stories</strong></dt>
+                        <fk>I find multiple stories that had missed potential and i set myself to fix some of those mistakes</fk>
+
+                        <br>
+                        <br>
+
+                        <dt><strong>Gaming</strong></dt>
+                        <fk>I like playing games personally i like finding hidden gems like on <a href="https://itch.io/">Itch.io</a> and the occasional <a href="https://gamejolt.com/">Game jolt</a></fk>
+
+                        <br>
+                        <br>
+
+                        <dt><strong>CODING</strong></dt>
+                        <fk>I love using <a href="https://www.w3schools.com/">W3 Schools</a> and seeing the potential of coding infact i use html in making my stories</fk>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <!-- END OF ME -->
+
+
+
+
+
+        <!-- WORKS -->
+        <div class="works">
+            <h2>MY WORKS</h2>
+
+            <br>
+            
+            <!-- START OF FIRST 10 CHAPTERS OF MHA 10-B REWRITE -->
+            <ol>
+                <div class="basis2">
+                    <li>"MHA 10-B Rewrite" is a story i am making based on <a href="https://www.webtoons.com/en/canvas/my-hero-academia-10-b/list?title_no=1067900">MHA 10-B</a> where Izuku tennyson finds the ommitrix from ben 10 instead of Ben tennyson</li>
+                    
+                    <br>
+                    <br>
+
+                    <div class="basis">
+                        <img src="10-B Cover art.png" alt="Original art of MHA 10-B">
+                    </div>
+                    
+                    <p>
+                        Click <a href="https://docs.google.com/document/d/1j-4pCQnvMaFCHv_Kfne0jn9IH1ZBHK-4NAhb8iwwsdQ/edit?tab=t.qeqidrhn62el">here</a> For my Rewrite
+                    </p>
+                </div>
+
+
+            <!-- START OF SW 1 -->
+                <div class="basis2">
+                    <li>I coded this website to show my top spotify artists 1# will shock you</li>
+                    
+                    <br>
+                    <br>
+
+                    <div class="basis">
+                        <img src="Top artists.png" alt="My favorite songs">
+                    </div>
+
+                    <p>
+                        Click <a href="file:///Users/jaanpatryk/Desktop/Homework/ICT%209/Q1/Assessments/Q1-SW1.html">here</a> to see a masterpiece
+                    </p>
+                </div>
+            <!-- END OF SW 1 -->
+
+            <!-- START OF DRILL 2 -->
+                <div class="basis2">
+                    <li>I made this website in order to let people rate movies.</li>
+                    
+                    <br>
+                    <br>
+
+                    <div class="basis">
+                        <img src="Ratemovie.png" alt="Rate a movie">
+                    </div>
+
+                    <p>
+                        Click <a href="file:///Users/jaanpatryk/Desktop/Homework/ICT%209/Q1/Assessments/Q1-SW1.html">here</a> to see a masterpiece
+                    </p>
+                </div>
+             <!-- END OF DRILL 2 -->
+            </ol>
+        </div>
+    </div>
+    <!-- END OF MAIN -->
+
+
+
+
+
+    <!-- FORM -->
+    <div class="form">
+        <form>
+            <h2>CONTACT ME</h2>
+            <!-- NAME -->
+            <div class="type">
+                <h5>Your Name:</h5>
+                <input type="text" name="Your Name" placeholder="Full name">
+
+                <!-- EMAIL -->
+                <h5>Your Email:</h5>
+                <input type="email" name="Your Email" placeholder="delacruz.jpm@obmontessori.edu.ph">
+            </div>
+
+            <!-- HOW YOU FOUND ME -->
+            <div class="find">
+                <!-- FACEBOOK -->
+                <h5>How did you find me?</h5>
+                <br>
+                <input type="radio" name="contact">
+                <label for="contact">Facebook</label>
+
+                <br>
+                <br>
+
+                <input type="radio" name="contact">
+                <label for="contact">Google</label>
+
+                <br>
+                <br>
+
+                <!-- FRIENDS -->
+                <input type="radio" name="contact">
+                <label for="contact">Friends</label>
+            </div>
+            <!-- END OF HOW YOU FOUND ME -->
+            
+            <!-- INTERESTS -->
+            <div class="interests">
+                <!-- WEB -->
+                <h5>Interested In:</h5>
+                <input type="checkbox" name="interest">
+                <label for="interest">Web Design</label>
+
+                <br>
+                <br>
+
+                <!-- GRAPHIC -->
+                <input type="checkbox" name="interest">
+                <label for="interest">Graphic Design</label>
+
+                <br>
+                <br>
+
+                <!-- ROBOTICS -->
+                <input type="checkbox" name="interest">
+                <label for="interest">Robotics</label>
+            </div>
+            <!-- END OF INTERESTS -->
+
+
+
+
+             <!-- RATE ME -->
+            <div class="rating">
+                    <h5>Rate My Portfolio</h5>
+                    <select>
+                        <option value="1">Select Rating</option>
+                        <option value="2">⭐</option>
+                        <option value="3">⭐⭐</option>
+                        <option value="4">⭐⭐⭐</option>
+                        <option value="5">⭐⭐⭐⭐</option>
+                        <option value="6">⭐⭐⭐⭐⭐</option>
+                    </select>
+            </div>
+            <!-- END OF RATE ME -->
+
+
+
+
+            <!-- FEEDBACK -->
+            <div class="feedback">
+                <h5>Any Feedback?</h5>
+                <textarea placeholder="Feedback here PLEASE"></textarea>
+            </div>
+            <!-- END OF FEEDBACK -->
+
+
+
+
+            <!-- BUTTON -->
+            <button type="submit" class="submit-but">
+                Submit
+            </button>
+        </form>
+    </div>
+    <!-- END OF FORM -->
+
+    <div class="footer">
+        <footer>©2026 | Jaan Patryk M. Dela Cruz | Q1 Project | 9-Emerald</footer>
+    </div>
+</body>
+</html>
